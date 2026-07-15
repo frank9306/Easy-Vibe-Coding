@@ -1,0 +1,4 @@
+node_modules/
+.easy-ecc/
+coverage/
+.DS_Store

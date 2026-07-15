@@ -1,0 +1,19 @@
+{
+  "name": "easy-ecc-cli",
+  "version": "0.0.1",
+  "description": "A selective, cross-agent installer for Everything Claude Code (ECC).",
+  "type": "module",
+  "bin": { "easy-ecc": "./bin/easy-ecc.js" },
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check bin/easy-ecc.js && node --check src/cli.js && node --check src/installer.js",
+    "start": "node bin/easy-ecc.js",
+    "docs": "node scripts/serve-docs.js"
+  },
+  "engines": { "node": ">=20" },
+  "keywords": ["ecc", "vibe-coding", "codex", "claude-code", "cursor", "opencode"],
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/frank9306/Easy-Vibe-Coding.git" },
+  "homepage": "https://frank9306.github.io/Easy-Vibe-Coding/",
+  "files": ["bin", "src", "README.md", "README.zh-CN.md", "LICENSE", "THIRD_PARTY_NOTICES.md", "CHANGELOG.md"]
+}
