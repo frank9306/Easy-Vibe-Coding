@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Renamed the GitHub repository to `Easy-ECC` and updated documentation and Pages links.
+
 ## 0.0.1 - 2026-07-15
 
 - Added Lite, Standard, Pro, Team, and Custom installation profiles.

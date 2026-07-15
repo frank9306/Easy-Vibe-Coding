@@ -26,9 +26,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/frank9306/Easy-Vibe-Coding.git"
+    "url": "git+https://github.com/frank9306/Easy-ECC.git"
   },
-  "homepage": "https://frank9306.github.io/Easy-Vibe-Coding/",
+  "homepage": "https://frank9306.github.io/Easy-ECC/",
   "files": [
     "bin",
     "src",

@@ -2,7 +2,7 @@
 
 > Install the right parts of [Everything Claude Code (ECC)](https://github.com/affaan-m/ECC) for your experience level and AI coding agent—without copying the whole repository.
 
-[简体中文](README.zh-CN.md) · [Documentation](https://frank9306.github.io/Easy-Vibe-Coding/) · [ECC upstream](https://github.com/affaan-m/ECC)
+[简体中文](README.zh-CN.md) · [Documentation](https://frank9306.github.io/Easy-ECC/) · [ECC upstream](https://github.com/affaan-m/ECC)
 
 Easy ECC is a selective, cross-agent installer for Vibe Coding guardrails. ECC is a broad agent harness system with hundreds of reusable skills, rules, and workflows. Easy ECC adds the missing onboarding layer: understandable profiles, a reviewable install plan, platform-aware destinations, pinned upstream content, and safe removal.
 

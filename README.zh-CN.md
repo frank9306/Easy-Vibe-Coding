@@ -2,7 +2,7 @@
 
 > 根据你的使用经验和 AI Coding Agent，选择性安装 [Everything Claude Code（ECC）](https://github.com/affaan-m/ECC) 中真正需要的部分，而不是复制整个仓库。
 
-[English](README.md) · [在线文档](https://frank9306.github.io/Easy-Vibe-Coding/) · [ECC 上游仓库](https://github.com/affaan-m/ECC)
+[English](README.md) · [在线文档](https://frank9306.github.io/Easy-ECC/) · [ECC 上游仓库](https://github.com/affaan-m/ECC)
 
 Easy ECC 是一个面向 Vibe Coding 的分级、跨 Agent 安装工具。ECC 提供了数量庞大的 Skills、Rules 和工程工作流；Easy ECC 补上易用性这一层：按人群划分安装级别、在写入前展示安装计划、适配不同 Agent 的目录、固定上游版本，并支持安全卸载。
 
