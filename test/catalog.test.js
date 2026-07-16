@@ -53,6 +53,7 @@ test("documentation page contains product, upstream and install affordances", ()
   const html = fs.readFileSync(new URL("../docs/index.html", import.meta.url), "utf8");
   assert.match(html, /Easy ECC/);
   assert.match(html, /github\.com\/affaan-m\/ECC/);
-  assert.match(html, /npx easy-ecc-cli@0\.0\.2 install/);
+  assert.match(html, /npx easy-ecc-cli@latest install/);
+  assert.doesNotMatch(html, /npx easy-ecc-cli@\d+\.\d+\.\d+/);
   assert.match(html, /id="profiles"/);
 });

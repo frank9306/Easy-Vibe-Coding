@@ -25,27 +25,27 @@ Supported targets: Claude Code, Codex, Cursor, OpenCode, and generic Agent Skill
 Requires Node.js 20 or newer.
 
 ```bash
-npx easy-ecc-cli@0.0.2 install
+npx easy-ecc-cli@latest install
 ```
 
 Preview exactly what would be installed:
 
 ```bash
-npx easy-ecc-cli@0.0.2 install --agent codex --level standard --dry-run
+npx easy-ecc-cli@latest install --agent codex --level standard --dry-run
 ```
 
 Choose individual components:
 
 ```bash
-npx easy-ecc-cli@0.0.2 install --agent cursor --level custom \
+npx easy-ecc-cli@latest install --agent cursor --level custom \
   --components coding-style,git-workflow,security,verification-loop
 ```
 
 Inspect or safely remove an installation:
 
 ```bash
-npx easy-ecc-cli@0.0.2 status
-npx easy-ecc-cli@0.0.2 uninstall
+npx easy-ecc-cli@latest status
+npx easy-ecc-cli@latest uninstall
 ```
 
 The uninstaller checks SHA-256 hashes and keeps files that changed after installation.

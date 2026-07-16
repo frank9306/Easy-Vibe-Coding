@@ -6,6 +6,7 @@
 
 - Redesigned the GitHub Pages site with a clearer product hierarchy, CLI preview, installation-level comparison, and responsive layout.
 - Fixed the copy-command feedback text and added an explicit clipboard failure state.
+- Changed documentation commands to use the npm `latest` tag instead of a hard-coded package version.
 - Renamed the GitHub repository to `Easy-ECC` and updated documentation and Pages links.
 
 ## 0.0.1 - 2026-07-15
