@@ -4,7 +4,7 @@
 
 [简体中文](README.zh-CN.md) · [Documentation](https://frank9306.github.io/Easy-ECC/) · [ECC upstream](https://github.com/affaan-m/ECC)
 
-Easy ECC is a selective, cross-agent installer for Vibe Coding guardrails. ECC is a broad agent harness system with hundreds of reusable skills, rules, and workflows. Easy ECC adds the missing onboarding layer: understandable profiles, a reviewable install plan, platform-aware destinations, pinned upstream content, and safe removal.
+Easy ECC is a cross-agent capability navigator and selective installer for Vibe Coding guardrails. It not only installs a focused set of ECC skills and rules, but also explains what is installed, when each capability helps, what benefit it provides, and which capability matches the task at hand.
 
 ## Why Easy ECC
 
@@ -48,6 +48,15 @@ npx easy-ecc-cli@latest status
 npx easy-ecc-cli@latest uninstall
 ```
 
+Understand a capability or get a local, privacy-preserving recommendation:
+
+```bash
+npx easy-ecc-cli@latest explain security
+npx easy-ecc-cli@latest suggest "review authentication before release"
+```
+
+`status` presents managed capabilities by activation mode, checks whether installed files are healthy, modified, or missing, and also discovers project-local skills and plugin manifests that were not installed by Easy ECC. `suggest` uses an explainable local scenario matcher; task text is never uploaded.
+
 The uninstaller checks SHA-256 hashes and keeps files that changed after installation.
 
 ## Commands
@@ -57,6 +66,8 @@ easy-ecc install [--agent <name>] [--level <name>] [--components a,b]
                  [--dry-run] [--force] [--root <directory>]
 easy-ecc list
 easy-ecc status
+easy-ecc explain <component>
+easy-ecc suggest <task>
 easy-ecc uninstall
 ```
 
@@ -68,13 +79,13 @@ When `--agent` is omitted, Easy ECC detects known project directories and otherw
 - The install plan is visible before network writes begin.
 - Existing files are never overwritten unless `--force` is provided.
 - Installed files and hashes are recorded in `.easy-ecc/state.json`.
-- MCP servers and high-permission hooks are intentionally excluded from 0.0.2.
+- MCP servers and high-permission hooks are intentionally excluded from 0.1.0.
 
 Easy ECC itself is MIT licensed. Downloaded ECC content remains governed by ECC's MIT License and upstream attribution. See [third-party notices](THIRD_PARTY_NOTICES.md).
 
-## Scope of 0.0.2
+## Scope of 0.1.0
 
-This first release proves the selective installation model. It installs common ECC rules and a curated set of self-contained skills. It does not attempt to translate every ECC command, hook, agent, or MCP configuration across incompatible runtimes.
+This release adds the Capability Navigator: readable inventory, activation guidance, benefits, health checks, component explanations, and task-based recommendations. It does not claim runtime telemetry or prove that an agent invoked a skill; that requires platform-specific hooks. It also does not manage remote plugins, MCP servers, accounts, or global private configuration.
 
 ## Development
 

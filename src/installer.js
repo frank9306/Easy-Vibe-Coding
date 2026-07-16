@@ -20,7 +20,8 @@ async function getFiles(component, fetcher) {
     const response = await fetcher(`${rawBase}/${component.path}`);
     if (!response.ok) throw new Error(`ECC download failed (${response.status}): ${component.path}`);
     const upstream = await response.text();
-    const content = `---\nname: ecc-${component.id}\ndescription: ECC ${component.id} engineering guidance installed by Easy ECC.\n---\n\n${upstream}`;
+    const description = `${component.summary} Use when ${component.useWhen.join(", ")}. Benefit: ${component.benefit}`;
+    const content = `---\nname: ecc-${component.id}\ndescription: ${description}\n---\n\n${upstream}`;
     return [{ relative: path.basename(component.path), content }];
   }
   const response = await fetcher(`${apiBase}/${component.path}?ref=${ECC.version}`, {
@@ -58,7 +59,7 @@ export async function install({ root, agent, level, componentIds = [], force = f
   }
   const stateDir = path.join(root, ".easy-ecc");
   fs.mkdirSync(stateDir, { recursive: true });
-  fs.writeFileSync(path.join(stateDir, "state.json"), JSON.stringify({ version: "0.0.2", ecc: ECC.version, agent, level, files: records }, null, 2) + "\n");
+  fs.writeFileSync(path.join(stateDir, "state.json"), JSON.stringify({ version: "0.1.0", ecc: ECC.version, agent, level, files: records }, null, 2) + "\n");
   return records;
 }
 

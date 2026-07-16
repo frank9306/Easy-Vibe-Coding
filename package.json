@@ -1,14 +1,14 @@
 {
   "name": "easy-ecc-cli",
-  "version": "0.0.2",
-  "description": "A selective, cross-agent installer for Everything Claude Code (ECC).",
+  "version": "0.1.0",
+  "description": "A cross-agent capability navigator and selective installer for Everything Claude Code (ECC).",
   "type": "module",
   "bin": {
     "easy-ecc": "bin/easy-ecc.js"
   },
   "scripts": {
     "test": "node --test",
-    "check": "node --check bin/easy-ecc.js && node --check src/cli.js && node --check src/installer.js",
+    "check": "node --check bin/easy-ecc.js && node --check src/cli.js && node --check src/installer.js && node --check src/catalog.js && node --check src/adapters.js && node --check src/advisor.js && node --check src/inventory.js",
     "start": "node bin/easy-ecc.js",
     "docs": "node scripts/serve-docs.js"
   },

@@ -9,7 +9,7 @@
 </head>
 <body>
   <header class="nav">
-    <a class="brand" href="#top" aria-label="Easy ECC 首页">Easy ECC <span>v0.0.2</span></a>
+    <a class="brand" href="#top" aria-label="Easy ECC 首页">Easy ECC <span>v0.1.0</span></a>
     <nav aria-label="主导航">
       <a href="#profiles">安装级别</a>
       <a href="#workflow">工作方式</a>
@@ -97,6 +97,19 @@
         <li><span>03</span><div><h3>审查计划</h3><p>写入前显示来源版本和全部目标文件。</p></div></li>
         <li><span>04</span><div><h3>安全落盘</h3><p>记录文件与 SHA-256，卸载时保护用户修改。</p></div></li>
       </ol>
+    </section>
+
+    <section class="profiles section" id="navigator">
+      <div class="section-heading">
+        <p class="overline">Capability Navigator</p>
+        <h2>装完以后，知道何时该用什么。</h2>
+        <p>Easy ECC 0.1.0 会展示已安装能力、触发方式、适用场景和实际收益，并根据当前任务给出本地、可解释的推荐。</p>
+      </div>
+      <div class="profile-grid">
+        <article><div><h3>看清能力</h3><p><code>easy-ecc status</code> 按激活方式展示能力，并检查文件是否正常、修改或缺失。</p></div></article>
+        <article class="featured"><div><h3>匹配任务</h3><p><code>easy-ecc suggest "审查登录安全"</code> 推荐已安装和可用能力，不上传任务文本。</p></div></article>
+        <article><div><h3>理解收益</h3><p><code>easy-ecc explain security</code> 说明作用、使用时机、收益和所属安装级别。</p></div></article>
+      </div>
     </section>
 
     <section class="trust">

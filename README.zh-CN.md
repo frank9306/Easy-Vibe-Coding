@@ -76,6 +76,18 @@ node bin/easy-ecc.js install --agent codex --level lite --dry-run
 
 Easy ECC 基于 Affaan Mustafa 及贡献者维护的 [Everything Claude Code](https://github.com/affaan-m/ECC) 才得以成立。Easy ECC 是独立社区项目，不隶属于 ECC，也不代表任何 AI Agent 厂商。
 
+## 0.1.0：能力导航器
+
+Easy ECC 不再只负责安装。它会说明项目中安装了什么能力、每项能力什么时候适用、能够带来什么收益，以及当前任务最适合使用哪些能力。
+
+```bash
+npx easy-ecc-cli@latest status
+npx easy-ecc-cli@latest explain security
+npx easy-ecc-cli@latest suggest "发布前审查登录安全"
+```
+
+`status` 按激活方式展示 Easy ECC 管理的能力，检查文件是否正常、被修改或缺失，并发现项目内其他未由 Easy ECC 管理的 Skill 与本地插件 manifest。`suggest` 使用本地、可解释的场景匹配，不上传任务文本。0.1.0 不声称能够统计 Agent 是否真正调用过某个 Skill，也不管理远程插件、MCP、账号或用户的全局私人配置。
+
 ## License
 
 [MIT](LICENSE)

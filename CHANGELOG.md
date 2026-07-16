@@ -2,6 +2,15 @@
 
 ## Unreleased
 
+## 0.1.0 - 2026-07-16
+
+- Added a capability navigator that explains what is installed, when each capability applies, and what benefit it provides.
+- Added `suggest <task>` with local, explainable recommendations for installed and available capabilities.
+- Added `explain <component>` and redesigned `status` with activation modes and file health checks.
+- Added discovery of project-local Agent Skills and plugin manifests that are not managed by Easy ECC.
+- Enriched installed rule descriptions so agents can recognize relevant trigger scenarios.
+- Improved post-install guidance and rejected unknown custom component names.
+
 ## 0.0.2 - 2026-07-16
 
 - Redesigned the GitHub Pages site with a clearer product hierarchy, CLI preview, installation-level comparison, and responsive layout.
